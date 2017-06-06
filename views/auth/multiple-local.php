@@ -70,7 +70,7 @@
         <input type="text" name="name" value="<?php echo $triedName; ?>" />
         <br/><br/>
         <?php \MapasCulturais\i::_e('E-mail', 'multipleLocal'); ?>
-        <input type="text" name="email" value="<?php echo $triedEmail; ?>" />
+        <input type="text" name="email" onChange="javascript:this.value=this.value.toLowerCase();" value="<?php echo $triedEmail; ?>" />
         <br/><br/>
         <?php \MapasCulturais\i::_e('Senha', 'multipleLocal'); ?>
         <input type="password" name="password" value="" />
